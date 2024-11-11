@@ -1,0 +1,63 @@
+/* Style général du tableau */
+table {
+    width: 60%;
+    border-collapse: collapse; /* Fusion des bordures pour un aspect propre */
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour le tableau */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Masque les débordements pour un aspect net */
+}
+
+/* Positionnement de la légende du tableau */
+.table caption-top {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+}
+
+/* Style des cellules (th et td) */
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle; /* Alignement vertical au centre */
+    border: 1px solid #ddd; /* Bordure fine gris clair */
+}
+
+/* Style de l'en-tête */
+th {
+    background-color: #4a90e2; /* Couleur bleue professionnelle */
+    color: #fff; /* Texte blanc */
+    font-weight: 500;
+}
+
+/* Couleur de fond alternée pour les lignes du corps du tableau */
+tbody tr:nth-child(even) {
+    background-color: #f7faff; /* Fond clair pour les lignes paires */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Fond blanc pour les lignes impaires */
+}
+
+/* Effet au survol des lignes */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Fond plus sombre lors du survol */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style des paragraphes dans les cellules */
+td p {
+    margin: 0;
+    padding: 5px 0;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-control{
+    max-width: 550px;
+}

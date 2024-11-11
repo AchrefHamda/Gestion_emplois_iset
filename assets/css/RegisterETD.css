@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.div1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Conteneur du formulaire de création de compte */
+.create-account-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+    padding: 2.5rem;
+    animation: fadeIn 1s ease;
+    text-align: center;
+    margin: auto; /* Centre le formulaire sur les petits écrans */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Structure et style du formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments à l'intérieur du formulaire */
+    gap: 1rem; /* Espacement entre les champs */
+}
+
+.input-group {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    text-align: left;
+}
+
+/* Ajouter un flexbox pour le nom et prénom */
+.input-group.name-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /* Espacement entre les champs */
+}
+
+/* Labels */
+.input-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Style du bouton de création de compte */
+.create-account-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%; /* Assure que le bouton prend toute la largeur du conteneur */
+    margin-top: 1rem;
+}
+
+.create-account-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Liens du pied de page */
+.footer-links {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}

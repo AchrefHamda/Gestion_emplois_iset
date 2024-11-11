@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Compte</title>
+    <link rel="stylesheet" href="css/RegisterETD.css">
+      <script>document.getElementById('login').style.display = 'none';
+    document.getElementById('logout').style.display = 'block';
+  </script>
+</head>
+<body>
+    <div class="div1">
+
+    <div class="create-account-container">
+
+        
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="EspaceA">Espace Admin</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Enrigistrer Etudiants</li>
+  </ol>
+</nav>
+
+    <br>
+        <div class="form-container">
+            <h2>Créer un Compte Pour les Etudiants</h2>
+           <form>
+    <!-- Nom et Prénom sur la même ligne -->
+    <div class="input-group name-container">
+        <div>
+            <label for="first-name">Prénom</label>
+            <input type="text" id="first-name" placeholder="Entrez le prénom" required>
+        </div>
+        <div>
+            <label for="last-name">Nom</label>
+            <input type="text" id="last-name" placeholder="Entrez le nom" required>
+        </div>
+    </div>
+
+    <!-- CIN -->
+    <div class="input-group">
+        <label for="cin">CIN</label>
+        <input type="text" id="cin" placeholder="Entrez le CIN" required>
+    </div>
+
+    <!-- Email -->
+    <div class="input-group">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" placeholder="Entrez le email" required>
+    </div>
+
+    <!-- Spécialité -->
+    <div class="input-group">
+        <label for="speciality">Spécialité</label>
+        <input type="text" id="speciality" placeholder="Entrez la spécialité" required>
+    </div>
+
+    <!-- Date de naissance -->
+    <div class="input-group">
+        <label for="dob">Date de naissance</label>
+        <input type="date" id="dob" required>
+    </div>
+
+    <!-- Mot de passe -->
+    <div class="input-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" placeholder="Entrez le mot de passe" required>
+    </div>
+
+    <!-- Confirmer le mot de passe -->
+    <div class="input-group">
+        <label for="confirm-password">Confirmer le mot de passe</label>
+        <input type="password" id="confirm-password" placeholder="Confirmez le mot de passe" required>
+    </div>
+
+    <button type="submit" class="create-account-btn">S'inscrire</button>
+    <div class="footer-links">
+        <a href="login">Vous avez déjà un compte ? Connexion</a>
+    </div>
+</form>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

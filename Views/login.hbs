@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        document.getElementById('RegisterETD').style.display = 'none';
+        document.getElementById('RegisterENS').style.display = 'none';
+          document.getElementById('login').style.display = 'block';
+    document.getElementById('logout').style.display = 'none';
+ 
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="login-container">
+            <div class="form-container">
+                <h2>Se connecter</h2>
+                {{#if erreur}}
+                <div class="alert alert-danger" role="alert">
+                <p >{{erreur}}</p>
+                </div>
+                {{/if}}
+                <form action="/login" id="form" class="form" method="post">
+                    <div class="input-group">
+                        <label for="cin">CIN</label>
+                        <input type="cin" id="cin" placeholder="Entrez votre CIN" name="cin" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" placeholder="Entrez votre mot de passe" name="password"
+                            required>
+                    </div>
+                    <button type="submit" class="login-btn">Connexion</button>
+                    <div class="footer-links">
+                        <a href="#">Mot de passe oublié ?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

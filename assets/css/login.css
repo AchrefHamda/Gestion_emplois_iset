@@ -1,0 +1,109 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.div1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.login-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    animation: fadeIn 1s ease;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.footer-links {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}
